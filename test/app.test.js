@@ -26,10 +26,10 @@ fallidas++;
 
 const resultadoSuma = sumar(5, 10);
 if (resultadoSuma === 15) {
-    console.log("✅ Test 3 pasó: sumar(5, 10) es 15");
+    console.log(" Test 3 pasó: sumar(5, 10) es 15");
     pasado++;
 } else {
-    console.log("❌ Test 3 fallido: se esperaba 15 pero dio " + resultadoSuma);
+    console.log(" Test 3 fallido: se esperaba 15 pero dio " + resultadoSuma);
     fallidas++;
 }
 
