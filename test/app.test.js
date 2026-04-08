@@ -24,7 +24,7 @@ fallidas++;
 }
 
 
-const resultadoSuma = sumar(5, 10);
+const resultadoSuma = sumar(4, 10);
 if (resultadoSuma === 15) {
     console.log(" Test 3 pasó: sumar(5, 10) es 15");
     pasado++;
