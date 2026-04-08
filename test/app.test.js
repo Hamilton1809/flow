@@ -1,4 +1,4 @@
-import {saludar, despedir, estadosistema} from "../src/app.js"
+import {saludar, despedir, estadosistema, sumar} from "../src/app.js"
 
 function ejecutarpruebas() {
 let pasado =0;
@@ -18,11 +18,25 @@ if (actualestado.estado === "activo"){
 console.log ("test 2: estadosistema()");
 pasado++;
 }else{
-console.log("test 2: fallido", estado, "en hamilton");
+// Cambié 'estado' por 'actualestado.estado' para que no dé error
+console.log("test 2: fallido", actualestado.estado, "en hamilton");
 fallidas++;
 }
-console.log ("\nresultados: " + pasado +"pasado, ", + fallidas + "fallidas");
-if(fallidas>0) process.exit(1);
-pruebas();
+
+
+const resultadoSuma = sumar(5, 10);
+if (resultadoSuma === 15) {
+    console.log("✅ Test 3 pasó: sumar(5, 10) es 15");
+    pasado++;
+} else {
+    console.log("❌ Test 3 fallido: se esperaba 15 pero dio " + resultadoSuma);
+    fallidas++;
 }
+
+console.log ("\nresultados: " + pasado +"pasado, ", + fallidas + "fallidas");
+
+if(fallidas>0) process.exit(1);
+
+}
+
 ejecutarpruebas();

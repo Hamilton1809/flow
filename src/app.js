@@ -13,3 +13,8 @@ version: "1.0.0",
 mensaje: "sistema coderrider funcionando"
  };
 }
+ 
+
+export function sumar(a, b) {
+    return a + b;
+}
