@@ -1,4 +1,4 @@
-import { version } from "react";
+
 
 export function saludar(nombre){
 return "hola" + nombre + ", bienvendio coderider";
