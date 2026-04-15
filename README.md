@@ -19,7 +19,7 @@ El archivo `app.js` incluye las siguientes funciones exportadas:
 ---
 
 ## 🧪 Pruebas Unitarias
-He implementado un "Test Runner" manual en `test.js` para validar la integridad del código sin dependencias externas.
+He implementado un "Test Runner" manual en `test.js` para validar la integridad del código sin dependencias externas
 
 ### Cómo ejecutar los tests:
 Asegúrate de tener [Node.js](https://nodejs.org/) instalado y ejecuta en tu terminal:
