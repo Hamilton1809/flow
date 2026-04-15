@@ -61,7 +61,7 @@ function ejecutarpruebas() {
         console.log("\n Pruebas fallidas. Revisa el código.");
         process.exit(1);
     } else {
-        console.log("\n ¡Todas las pruebas pasaron con éxito!");
+        console.log("\n ¡Todas las pruebas pasaron con éxito");
     }
 }
 
