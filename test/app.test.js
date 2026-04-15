@@ -7,7 +7,7 @@ function ejecutarpruebas() {
     // Test 1: Saludar
     const r1 = saludar("hamilton");
     if (r1.includes("hamilton")) {
-        console.log("✅ Test 1 pasado: función saludar es correcta");
+        console.log(" Test 1 pasado: función saludar es correcta");
         pasado++;
     } else {
         console.log("❌ Test 1 fallido:", r1);
