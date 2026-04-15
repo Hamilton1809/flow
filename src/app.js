@@ -29,8 +29,11 @@ export function healthcheck() {
  * @param {number} n 
  * @returns {number}
  */
-export function factorial(n) { 
-    if (n < 0) return undefined;
-    if (n === 0 || n === 1) return 1;
-    return n * factorial(n - 1);
+
+
+export function factorial(n) {
+  if (n < 0) return undefined;
+  if (n === 0 || n === 1) return 1; 
+  return n * factorial(n - 1);
 }
+
