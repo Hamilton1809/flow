@@ -20,7 +20,8 @@ export function sumar(a, b) {
 }
 
 export function healthcheck() {
-    return null;
+    return { status: 'ok' }; // Antes devolvía null
+
 }
 
 /**
