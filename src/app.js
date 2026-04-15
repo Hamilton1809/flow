@@ -20,16 +20,16 @@ export function sumar(a, b) {
 }
 
 export function healthcheck() {
-    return { status: 'ok' }; // Antes devolvía null
+    return { status: 'ok' };
 
 }
 
 /**
- * Calcula el factorial de un número entero no negativo.
+ 
  * @param {number} n 
  * @returns {number}
  */
-export function factorial(n) { // CAMBIO: Ahora exportada igual que las otras
+export function factorial(n) { 
     if (n < 0) return undefined;
     if (n === 0 || n === 1) return 1;
     return n * factorial(n - 1);
