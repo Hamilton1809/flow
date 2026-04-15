@@ -31,10 +31,10 @@ export function healthcheck() {
  */
 
 
-// src/app.js - ERROR PROVOCADO
+
 export function factorial(n) {
   if (n < 0) return undefined;
-  // Borramos el caso base del 1 para que falle o sea infinito
-  return n * factorial(n - 1); 
+  if (n === 0 || n === 1) return 1; 
+  return n * factorial(n - 1);
 }
 
