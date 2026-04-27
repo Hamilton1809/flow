@@ -22,11 +22,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      # Este paso es para asegurarnos de que GitHub vea tu index.html
+      - name: Verificar archivos
+        run: ls -la
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Al estar el index.html suelto en la raíz, usamos "."
-          path: "." 
+          # Usamos la ruta absoluta del workspace para evitar confusiones
+          path: ${{ github.workspace }}
 
       - name: Deploy to GitHub Pages
         id: deployment
