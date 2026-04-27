@@ -3,11 +3,11 @@ name: deploy para coderider
 on:
   push:
     branches:
-      - main  # Corregido: 'branches' en plural y sangría correcta
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Corregido: era 'latest', no 'lastest'
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
@@ -25,12 +25,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Si tu index.html está dentro de la carpeta docs, usa esta ruta:
           path: "./docs"
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Show deployment URL
-        run: |
-          echo "Sitio en una producción: ${{ steps.deployment.outputs.page_url }}"
