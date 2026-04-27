@@ -25,8 +25,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Si tu index.html está dentro de la carpeta docs, usa esta ruta:
-          path: "./docs"
+          # Al estar el index.html suelto en la raíz, usamos "."
+          path: "." 
 
       - name: Deploy to GitHub Pages
         id: deployment
